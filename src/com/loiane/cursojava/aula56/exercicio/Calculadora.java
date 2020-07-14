@@ -34,6 +34,7 @@ public class Calculadora {
 			this.simbolo = simbolo;
 		}
 
+		@Override
 		public String toString() {
 			return this.simbolo;
 		}

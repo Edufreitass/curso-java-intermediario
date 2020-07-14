@@ -8,6 +8,7 @@ public class Deadlock {
 		final String RECURSO2 = "Recurso #2";
 
 		Thread t1 = new Thread() {
+			@Override
 			public void run() {
 				synchronized (RECURSO1) {
 					System.out.println("Thread #1: bloqueou recurso 1");
@@ -29,6 +30,7 @@ public class Deadlock {
 		};
 
 		Thread t2 = new Thread() {
+			@Override
 			public void run() {
 				synchronized (RECURSO2) {
 					System.out.println("Thread #2: bloqueou recurso 2");

@@ -9,6 +9,7 @@ public class Anonima {
 	public static void main(String[] args) {
 
 		Anonima anonima = new Anonima() {
+			@Override
 			public void imprimeTexto() {
 				System.out.println("qualquer texto que foi sobreescrito");
 			}
